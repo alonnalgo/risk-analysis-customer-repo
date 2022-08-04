@@ -8,9 +8,9 @@ jobs:
      name: 'Algosec Risk Analysis Job'
      runs-on: ubuntu-latest
      steps:
-        - name: 'Algosec Risk Analysis Action'
-          run: alonnalgo/risk-analysis-action@v0.0.53
-          env:
+       - name: Algosec Risk Analysis
+         uses: alonnalgo/risk-analysis-action@v0.0.53
+         env:
             GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             GITHUB_SHA: ${{ github.sha }}
             GITHUB_WORKSPACE: ${{ github.workspace }}
