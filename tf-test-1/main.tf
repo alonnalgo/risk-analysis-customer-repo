@@ -2,6 +2,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
+
 variable "for_test" {
   type    = string
   default = "test"
