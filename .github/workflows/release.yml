@@ -9,7 +9,7 @@ jobs:
      runs-on: ubuntu-latest
      steps:
         - name: 'Algosec Risk Analysis Action'
-          run: algosec/risk-analysis-action@1.0.23
+          run: algosec/risk-analysis-action@1.0.33
           env:
             GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             GITHUB_SHA: ${{ github.sha }}
