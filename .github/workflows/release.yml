@@ -16,6 +16,9 @@ jobs:
             # Use AWS Environment Variables or
             # an external Action to authenticate with provider
             # https://github.com/marketplace/actions/configure-aws-credentials-action-for-github-actions
+            STOP_WHEN_FAIL: true
+            FULL_ANALYSIS: false
+            USE_CHECKOUT: true
             AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }} 
             ######
