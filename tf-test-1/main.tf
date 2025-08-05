@@ -10,7 +10,7 @@ variable "for_test" {
 
 resource "aws_cloudfront_distribution" "cloudfront_distribution" {
 
-  enabled             = true
+  enabled             = false
   retain_on_delete    = false
   is_ipv6_enabled     = false
   default_root_object = var.default_root_object
